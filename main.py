@@ -54,4 +54,3 @@ if __name__ == '__main__':
         methods = [1, 2, 3, 4, 5, 6]
     augment.run_augmentation(load_img_path, save_img_path, save_label_path, load_img, generate_number, methods)
 
-# img type loading, koyta img generate korbe, randomly choose method: false hole, Specify
