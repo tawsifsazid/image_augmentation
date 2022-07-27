@@ -4,7 +4,7 @@ from preprocessing import augment
 
 def help():
     print('\n\ncommand formats/options:\nmain.py \nimg_type: (str), choose from: "jpg", "png" \ngenerate: (int) how many image per sample\nchoose_augment_methods_randomly: (str), choose from: "T","F" '
-    '\nspecify method(if "F"): (str), choose from:"rotate","blur","occlusion","brightness","contrast","distortion"\n')
+    '\nspecify method(if ''choose_augment_methods_randomly'' is "F"): (str), choose from:"rotate","blur","occlusion","brightness","contrast","distortion"\n')
 
 if __name__ == '__main__':
     print('number of arguments = {}'.format(len(sys.argv)))
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     generate_number = sys.argv[2]
     choose_method_randomly = sys.argv[3]
     specify = sys.argv[4]
-    print(type(generate_number))
+    #print(type(generate_number))
     if load_img != 'jpg' and load_img != 'png':
         print('error: "img_type" image format should be "jpg" or "png"')
         help()
